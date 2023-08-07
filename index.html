@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator</title>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <div class="container">
+
+            <input type="text" class="result" id="output" placeholder="0">
+
+            <div class="buttons">
+                <button id="clear" class="operators" onclick="clearAll()">AC</button>
+                <button id="delete" class="operators" onclick="removeLast()">DEL</button>
+                <!-- <button id="mod" class="operators" onclick="display('%')">%</button> -->
+                <button id="sub" class="operators" onclick="display('/')">&divide;</button>
+                <button id="sub" class="operators" onclick="display('%')">%</button>
+                 
+
+                <button id="seven" onclick="display(7)">7</button>
+                <button id="eight" onclick="display(8)">8</button>
+                <button id="nine" onclick="display(9)">9</button>
+                <button id="plus" class="operators" onclick="display('+')">+</button>
+                
+
+                <button id="four" onclick="display(4)">4</button>
+                <button id="five" onclick="display(5)">5</button>
+                <button id="six" onclick="display(6)">6</button>
+                <button id="multi" class="operators" onclick="display('*')">&times;</button>
+                
+
+                <button id="one" onclick="display(1)">1</button>
+                <button id="two" onclick="display(2)">2</button>
+                <button id="three" onclick="display(3)">3</button>
+                 <button id="minu" class="operators" onclick="display('-')">&minus;</button>
+                
+                <button id="zero" onclick="display(0)">0</button>
+                <button id="equalTo" class="operators" onclick="evaluateExp()">=</button>
+                
+
+                <!-- <button onclick="display(0)">0</button>
+                <button onclick="display(0)">00</button>
+                <button onclick="display('.')">.</button> -->
+            </div>
+
+        </div>
+
+    </body>
+    <script src="/main.js"></script>
+</html>
